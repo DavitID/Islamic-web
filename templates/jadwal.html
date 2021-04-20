@@ -1,0 +1,68 @@
+{% import 'core.html' as inti %}
+<html>
+  <head>
+    {{ inti.headers(wajib) }}
+    <title>Jadwal</title>
+  </head>
+  <body>
+    {{ inti.navbar(scall) }}
+    <br>
+    <img class="img-fluid rounded mx-auto d-block" src="https://c.top4top.io/p_1936ytegq0.jpeg">
+    <br>
+    <div class="container">
+      <div class="col-md-12">
+        <div class="card shadow-shorter">
+          <div class="card-body">
+            <p class="h3 font-sambut text-center text-dark">{{ kota }} </p>
+            <hr class="display-4 bg-dark">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 mt-4">
+                  <p class="h4 text-center text-dark font-sambut">Subuh</p>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <p class="h4 text-center text-dark font-sambut">{{ Subuh }} </p>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <p class="h4 text-center text-dark font-sambut">Dzuhur </p>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <p class="h4 text-center text-dark font-sambut">{{ Dzuhur }} </p>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <p class="h4 text-center text-dark font-sambut">Ashar </p>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <p class="h4 text-center text-dark font-sambut">{{ Ashar }}</p>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <p class="h4 text-center text-dark font-sambut">Maghrib </p>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <p class="h4 text-center text-dark font-sambut">{{ Maghrib }} </p>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <p class="h4 text-center text-dark font-sambut">Isya </p>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <p class="h4 text-center text-dark font-sambut">{{ Isya }} </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+    {{ inti.footer(bawah) }}
+    {{ inti.java(anim) }}
+  </body>
+</html>

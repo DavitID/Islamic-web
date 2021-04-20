@@ -1,0 +1,28 @@
+{% import 'core.html' as inti %}
+<html>
+  <head>
+    {{ inti.headers(wajib) }}
+    <title>Ayat kursi</title>
+  </head>
+  <body>
+    {{ inti.navbar(scall) }}
+    <img class="img-fluid rounded mx-auto d-block" src="https://e.top4top.io/p_1935tj7lo0.png"/>
+    <div class="container">
+      <div class="card shadow-shorter">
+        <div class="card-body">
+          <p class="h4 mx-right text-right">{{ arab }}</p><br>
+          <p class="h5 font-sambut text-left mx-left">{{ latin }} </p><br>
+          <div class="container">
+            <div class="card bg-secondary">
+              <div class="card-body">
+                <p class="h5 font-sambut text-center mx-auto">{{ tafsir }} </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+    {{ inti.footer(bawah) }}
+    {{ inti.java(anim) }}
+  </body>
+</html>

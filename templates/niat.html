@@ -1,0 +1,36 @@
+{% import 'core.html' as inti %}
+<html>
+  <head>
+    {{ inti.headers(wajib) }}
+  </head>
+  <body>
+    {{ inti.navbar(scall) }}
+    <br><br>
+    <img class="img-fluid rounded mx-auto d-block" src="https://e.top4top.io/p_1935tj7lo0.png">
+    <br><br>
+    <div class="container">
+      <div class="row">
+      {% for hasil in jeson %}
+        <div class="col-md-6 mt-4">
+          <div class="card shadow-shorter">
+            <div class="card-body">
+              <p class="h4 mx-auto text-center card-text">{{ hasil.name }} </p>
+              <hr class="display-4 bg-dark"
+              <p class="h4 text-center mx-auto">{{ hasil.arabic }} </p><br>
+              <div class="container">
+                <div class="card bg-secondary">
+                  <div class="card-body">
+                    <p class="h5 font-sambut">{{ hasil.latin }} </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div><br><br>
+    {{ inti.footer(bawah) }}
+    {{ inti.java(anim) }}
+  </body>
+</html>

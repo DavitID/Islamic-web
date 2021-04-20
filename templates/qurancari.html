@@ -1,0 +1,40 @@
+ {% import 'core.html' as inti %}
+ <html>
+  <head>
+    {{ inti.headers(wajib) }}
+    <title>Cari surah</title>
+  </head>
+  <body>
+    {{ inti.navbar(scall) }}
+    <br>
+    <img class="img-fluid rounded mx-auto d-block" src="https://d.top4top.io/p_1936r5ex40.jpeg">
+    <br>
+    <div class="container">
+      <div class="row">
+        {% for hasil in jeson %}
+        <div class="col-md-6">
+          <a href="/quran/{{ hasil.nomor }}">
+            <div class="card shadow-shorter mt-4">
+              <div class="card-body">
+                <p class="h2 text-dark text-center">{{hasil.nomor}}</p>
+                <hr class="display-4 bg-dark">
+                <p class="h4 text-center mx-auto text-dark"> {{ hasil.asma }} </p>
+                <p class="h4 text-center mx-auto text-center font-sambut text-dark">{{ hasil.nama }} </p><br>
+                <div class="container">
+                  <div class="card bg-secondary">
+                    <div class="card-body">
+                      <p class="h5 text-dark font-sambut mx-auto text-center">{{ hasil.arti }} </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div><br><br>
+    {{ inti.footer(bawah) }}
+    {{ inti.java(anim) }}
+  </body>
+</html>

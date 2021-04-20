@@ -1,0 +1,30 @@
+{% import 'core.html' as inti %}
+<html>
+  <head>
+    {{ inti.headers(wajib) }}
+    <title>Cari kota</title>
+  </head>
+  <body>
+    {{ inti.navbar(scall) }}
+    <br>
+    <img class="img-fluid rounded mx-auto d-block" src="https://c.top4top.io/p_1936ytegq0.jpeg">
+    <br>
+    <div class="col-md-12">
+      <div class="container">
+        <div class="card shadow-shorter">
+          <div class="card-body">
+            <form action="/cari/jadsho" methods="post">
+              <input class="form-control font-sambut" type="text" placeholder="Nama kota..." name="kota"></input><br>
+
+             <center>
+               <button class="btn btn-primary" type="submit">Search</button>
+             </center>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+    {{ inti.footer(bawah) }}
+    {{ inti.java(anim) }}
+  <body>
+</html>

@@ -1,0 +1,56 @@
+ {% import 'core.html' as inti %}
+ <html>
+  <head>
+    {{ inti.headers(wajib) }}
+    <title>Nabi</title>
+  </head>
+  <body>
+    {{ inti.navbar(scall) }}
+    <br>
+    <img class="img-fluid rounded mx-auto d-block" src="https://b.top4top.io/p_1936m6ayd0.png">
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <p class="h3 text-center text-dark font-sambut">{{ nama }} </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mt-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <p class="h4 text-center font-sambut">Lahir tahun: {{ lahir }}</p>
+                </div>
+                <div class="col-md-6">
+                  <p class="h4 text-center font-sambut">Lahir di: {{ ttl }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-md-12 mt-4">
+        <div class="card shadow-shorter">
+          <div class="card-body">
+            <p class="h5 text-left font-sambut text-dark">{{ kisah }} </p>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+
+    {{ inti.footer(bawah) }}
+    {{ inti.java(anim) }}
+  </body>
+</html>
